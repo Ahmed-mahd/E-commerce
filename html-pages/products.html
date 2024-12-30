@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flora Shop - Discover our curated collection of headscarves">
+    <title>Chiffon | Flora Collection</title>
+    <link rel="stylesheet" href="/styles/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="header-main">
+            <div class="container">
+                <nav class="primary-nav" role="navigation" aria-label="Primary navigation">
+                    <a href="/html-pages/index.html" class="brand" aria-label="Flora home">
+                        <span class="brand-text">Flora</span>
+                    </a>
+                    
+                    <form class="search-form" role="search" aria-label="Site">
+                        <div class="search-input-wrapper">
+                            <label for="search-input" class="visually-hidden">Search products</label>
+                            <input type="search" 
+                                   id="search-input"
+                                   class="search-input"
+                                   placeholder="Search..."
+                                   autocomplete="on"
+                                   aria-label="Search products">
+                            <button type="submit" class="search-submit" aria-label="Submit search">
+                                <svg aria-hidden="true" focusable="false" class="icon">
+                                    <use href="#icon-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="header-actions">
+                        <a href="/html-pages/login.html" class="btn btn-login">Log In</a>
+                        <button type="button" 
+                                class="btn btn-cart"
+                                aria-label="Shopping cart"
+                                aria-expanded="false"
+                                aria-controls="cart-drawer">
+                            <svg aria-hidden="true" focusable="false" class="icon">
+                                <use href="#icon-cart"></use>
+                            </svg>
+                            <span class="cart-count" aria-live="polite" aria-atomic="true">0</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="category-nav" role="navigation" aria-label="Category navigation">
+            <div class="container">
+                <ul class="category-menu">
+                    <li><a href="/html-pages/index.html" class="category-link">Home</a></li>
+                    <li><a href="/html-pages/flora-section-catagory.html" class="category-link" aria-current="page">Shop</a></li>
+                    <li><a href="/html-pages/about.html" class="category-link">About</a></li>
+                    <li><a href="/html-pages/contact.html" class="category-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ol>
+                <li><a href="/html-pages/index.html">Home</a></li>
+                <li><a href="/html-pages/flora-section-catagory.html">All Products</a></li>
+                <li aria-current="page">Chiffon</li>
+            </ol>
+        </nav>
+
+        <article class="product">
+            <div class="product-gallery">
+                <figure class="product-image">
+                    <img src="/img/Chiffon.jpg" 
+                         alt="Chiffon headscarf"
+                         width="600"
+                         height="800"
+                         id="product-main-image">
+                </figure>
+                
+                <div class="gallery-controls">
+                    <button class="prev" disabled>
+                        <svg width="16" height="16" viewBox="0 0 16 16">
+                            <path d="M15 8H1m7-7L1 8l7 7" stroke="currentColor" fill="none"/>
+                        </svg>
+                        <span>Previous</span>
+                    </button>
+                    <button class="next">
+                        <span>Next</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16">
+                            <path d="M1 8h14M8 1l7 7-7 7" stroke="currentColor" fill="none"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="product-info">
+                <h1>Chiffon headscarf</h1>
+                <p class="sku">SKU: 0000000025</p>
+                <div class="price">65٫00 EGP</div>
+    
+                <form class="product-form" id="product-form">
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <div class="quantity-wrapper">
+                            <button type="button" class="decrease">-</button>
+                            <input type="number" 
+                                   id="quantity" 
+                                   name="quantity" 
+                                   value="1" 
+                                   min="1" 
+                                   max="99">
+                            <button type="button" class="increase">+</button>
+                        </div>
+                    </div>
+    
+                    <div class="purchase-buttons">
+                        <button type="submit" class="add-to-cart">
+                            Add to Cart
+                        </button>
+                        <button type="button" class="buy-now" id="buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </form>
+    
+                <div class="product-tabs">
+                    <div class="tab">
+                        <button class="tab-trigger" 
+                                aria-expanded="false" 
+                                aria-controls="product-info-content">
+                            Product Info
+                            <svg aria-hidden="true" class="icon" width="15" height="15" viewBox="0 0 15 15">
+                                <path d="M7.5 1v13M1 7.5h13" stroke="currentColor"/>
+                            </svg>
+                        </button>
+                        <div id="product-info-content" 
+                             class="tab-content" 
+                             hidden 
+                             itemprop="description">
+                            <p>This is product detail. This is a pretty greenish gray hijab</p>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <button class="tab-trigger" 
+                                aria-expanded="false" 
+                                aria-controls="returns-content">
+                            Return & Refund Policy
+                            <svg aria-hidden="true" class="icon" width="15" height="15" viewBox="0 0 15 15">
+                                <path d="M7.5 1v13M1 7.5h13" stroke="currentColor"/>
+                            </svg>
+                        </button>
+                        <div id="returns-content" 
+                             class="tab-content" 
+                             hidden>
+                            <p>Our return and refund policies ensure your satisfaction. Returns accepted within 30 days of purchase.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <button class="tab-trigger" 
+                                aria-expanded="false" 
+                                aria-controls="shipping-content">
+                            Shipping Info
+                            <svg aria-hidden="true" class="icon" width="15" height="15" viewBox="0 0 15 15">
+                                <path d="M7.5 1v13M1 7.5h13" stroke="currentColor"/>
+                            </svg>
+                        </button>
+                        <div id="shipping-content" 
+                             class="tab-content" 
+                             hidden>
+                            <p>Free shipping on orders over 500 EGP. Standard delivery 3-5 business days.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Linking scripts as ES6 modules (optional for review, etc.) -->
+    <script type="module" src="/linking/reviewLink.js"></script>
+    
+    <!-- Local products logic (unchanged) -->
+    <script type="module" src="/scripts/products.js"></script>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section brand-section">
+                    <a href="/html-pages/index.html" class="brand">
+                        <span class="brand-text">Flora</span>
+                    </a>
+                </div>
+                <div class="footer-section">
+                    <nav aria-label="Footer primary navigation">
+                        <ul class="footer-menu">
+                            <li><a href="/html-pages/flora-section-catagory.html">Shop</a></li>
+                            <li><a href="/html-pages/about.html">About Us</a></li>
+                            <li><a href="/html-pages/contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <nav aria-label="Footer secondary navigation">
+                        <ul class="footer-menu">
+                            <li><a href="/html-pages/shipping-and-returns.html">Shipping & Returns</a></li>
+                            <li><a href="/html-pages/store-policy.html">Store Policy</a></li>
+                            <li><a href="/html-pages/payment.html">Payment Methods</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <nav aria-label="Social media">
+                        <ul class="social-menu">
+                            <li>
+                                <a href="https://facebook.com/florashop"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Follow us on Facebook">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/flora.egy"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Follow us on Instagram">
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2024 by Flora.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SVG Icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-search" viewBox="0 0 24 24">
+            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </symbol>
+        <symbol id="icon-cart" viewBox="0 0 24 24">
+            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+        </symbol>
+        <symbol id="icon-chevron-right" viewBox="0 0 24 24">
+            <path d="M9 18l6-6-6-6"/>
+        </symbol>
+    </svg>
+
+    <script src="/scripts/cart-drawer.js"></script>
+    <script src="/scripts/cart.js"></script>
+</body>
+</html>

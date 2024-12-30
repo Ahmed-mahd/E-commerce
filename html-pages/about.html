@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flora Shop - Discover our curated collection of headscarves">
+    <title>Flora | About Us</title>
+    <link rel="stylesheet" href="/styles/about-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="header-main">
+            <div class="container">
+                <nav class="primary-nav" role="navigation" aria-label="Primary navigation">
+                    <a href="/html-pages/index.html" class="brand" aria-label="Flora home">
+                        <span class="brand-text">Flora</span>
+                    </a>
+                    
+                    <form class="search-form" role="search" aria-label="Site">
+                        <div class="search-input-wrapper">
+                            <label for="search-input" class="visually-hidden">Search products</label>
+                            <input type="search" 
+                                   id="search-input"
+                                   class="search-input"
+                                   placeholder="Search..."
+                                   autocomplete="off"
+                                   aria-label="Search products">
+                            <button type="submit" class="search-submit" aria-label="Submit search">
+                                <svg aria-hidden="true" focusable="false" class="icon">
+                                    <use href="#icon-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="header-actions">
+                        <a href="/html-pages/login.html" class="btn btn-login">Log In</a>
+                        <button type="button" 
+                                class="btn btn-cart"
+                                aria-label="Shopping cart"
+                                aria-expanded="false"
+                                aria-controls="cart-drawer">
+                            <svg aria-hidden="true" focusable="false" class="icon">
+                                <use href="#icon-cart"></use>
+                            </svg>
+                            <span class="cart-count" aria-live="polite" aria-atomic="true">0</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="category-nav" role="navigation" aria-label="Category navigation">
+            <div class="container">
+                <ul class="category-menu">
+                    <li><a href="/html-pages/index.html" class="category-link">Home</a></li>
+                    <li><a href="/html-pages/flora-section-catagory.html" class="category-link" aria-current="page">Shop</a></li>
+                    <li><a href="/html-pages/about.html" class="category-link">About</a></li>
+                    <li><a href="/html-pages/contact.html" class="category-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-container">
+        <h1 class="about-title">About Us</h1>
+
+        <div class="about-content">
+            <p>Welcome to Flora, your ultimate destination for elegant and versatile scarves that celebrate the beauty of nature and timeless fashion.</p>
+            
+            <p>At Flora, we believe that scarves are more than just accessories—they're statements of style, comfort, and individuality. Inspired by the natural world, our collections feature exquisite designs, vibrant colors, and premium fabrics that cater to every season and occasion. Whether you're looking for a cozy wrap for chilly evenings or a chic accent for your outfit, Flora has something special for you.</p>
+            
+            <p>Our journey began with a passion for blending artistry with functionality. We work closely with skilled artisans and designers to bring you a curated selection of scarves that reflect quality craftsmanship and sustainable practices.</p>
+            
+            <p>Join us in embracing the charm of scarves that inspire confidence and add a touch of elegance to everyday moments. At Flora, we're not just selling scarves—we're sharing stories, fostering creativity, and helping you express your unique style.</p>
+            
+            <p>Discover Flora, where fashion meets ✨</p>
+        </div>
+    </main>
+
+    <script src="about.js"></script>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section brand-section">
+                    <a href="/" class="brand">
+                        <span class="brand-text">Flora</span>
+                    </a>
+                </div>
+
+                <div class="footer-section">
+                    <nav aria-label="Footer primary navigation">
+                        <ul class="footer-menu">
+                            <li><a href="/html-pages/flora-section-catagory.html">Shop</a></li>
+                            <li><a href="/html-pages/about.html">About Us</a></li>
+                            <li><a href="/html-pages/contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <nav aria-label="Footer secondary navigation">
+                        <ul class="footer-menu">
+                            <li><a href="/html-pages/shipping-and-returns.html">Shipping & Returns</a></li>
+                            <li><a href="/html-pages/store-policy.html">Store Policy</a></li>
+                            <li><a href="/html-pages/payment.html">Payment Methods</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <nav aria-label="Social media">
+                        <ul class="social-menu">
+                            <li>
+                                <a href="https://facebook.com/florashop" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Follow us on Facebook">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/flora.egy"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Follow us on Instagram">
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 by Flora.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-search" viewBox="0 0 24 24">
+            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </symbol>
+        <symbol id="icon-cart" viewBox="0 0 24 24">
+            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+        </symbol>
+        <symbol id="icon-chevron-right" viewBox="0 0 24 24">
+            <path d="M9 18l6-6-6-6"/>
+        </symbol>
+    </svg>
+    <script src="/scripts/cart.js"></script> 
+    <script src="/scripts/cart-drawer.js"></script>
+</body>
+</html>

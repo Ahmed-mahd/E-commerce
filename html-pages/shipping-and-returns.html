@@ -1,0 +1,166 @@
+<!-- shipping-and-returns.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flora Shop - Discover our curated collection of headscarves">
+    <title>Flora | Shipping-and-Returns</title>
+    <link rel="stylesheet" href="/styles/shippingstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="header-main">
+            <div class="container">
+                <nav class="primary-nav" role="navigation" aria-label="Primary navigation">
+                    <a href="/html-pages/index.html" class="brand" aria-label="Flora home">
+                        <span class="brand-text">Flora</span>
+                    </a>
+                    
+                    <form class="search-form" role="search" aria-label="Site">
+                        <div class="search-input-wrapper">
+                            <label for="search-input" class="visually-hidden">Search products</label>
+                            <input type="search" 
+                                   id="search-input"
+                                   class="search-input"
+                                   placeholder="Search..."
+                                   autocomplete="off"
+                                   aria-label="Search products">
+                            <button type="submit" class="search-submit" aria-label="Submit search">
+                                <svg aria-hidden="true" focusable="false" class="icon">
+                                    <use href="#icon-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="header-actions">
+                        <a href="/html-pages/login.html" class="btn btn-login">Log In</a>
+                        <button type="button" 
+                                class="btn btn-cart"
+                                aria-label="Shopping cart"
+                                aria-expanded="false"
+                                aria-controls="cart-drawer">
+                            <svg aria-hidden="true" focusable="false" class="icon">
+                                <use href="#icon-cart"></use>
+                            </svg>
+                            <span class="cart-count" aria-live="polite" aria-atomic="true">0</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="category-nav" role="navigation" aria-label="Category navigation">
+            <div class="container">
+                <ul class="category-menu">
+                    <li><a href="" class="category-link">Home</a></li>
+                    <li><a href="/html-pages/flora-section-catagory.html" class="category-link" aria-current="page">Shop</a></li>
+                    <li><a href="/html-pages/about.html" class="category-link">About</a></li>
+                    <li><a href="/html-pages/contact.html" class="category-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-container">
+        <h1 class="about-title">Shipping & Returns</h1>
+
+        <div class="about-content">
+            <p>At Flora, we aim to ensure that your shopping experience is seamless and satisfactory. Here’s everything you need to know about our shipping and return policies.</p>
+            
+            <h2>Shipping</h2>
+            <p>We offer reliable shipping options to make sure your orders reach you in a timely and efficient manner. Our shipping rates and estimated delivery times are as follows:</p>
+            <ul>
+                <li><strong>Standard Shipping:</strong> 3-5 business days.</li>
+                <li><strong>Express Shipping:</strong> 1-2 business days.</li>
+            </ul>
+            <p>Free standard shipping on orders above 500EGP!</p>
+
+            <h2>Returns</h2>
+            <p>We understand that sometimes a product may not meet your expectations. Our return policy includes:</p>
+            <ul>
+                <li>Returns are accepted within 14 days of receiving your order.</li>
+                <li>The item must be in its original condition, with tags and packaging intact.</li>
+                <li>Refunds will be processed within 5-7 business days of receiving the returned item.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section brand-section">
+                    <a href="/" class="brand">
+                        <span class="brand-text">Flora</span>
+                    </a>
+                </div>
+
+                <div class="footer-section">
+                    <nav aria-label="Footer primary navigation">
+                        <ul class="footer-menu">
+                            <li><a href="/html-pages/flora-section-catagory.html">Shop</a></li>
+                            <li><a href="/html-pages/about.html">About Us</a></li>
+                            <li><a href="/html-pages/contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <nav aria-label="Footer secondary navigation">
+                        <ul class="footer-menu">
+                            <li><a href="/html-pages/shipping-and-returns.html">Shipping & Returns</a></li>
+                            <li><a href="/html-pages/store-policy.html">Store Policy</a></li>
+                            <li><a href="/html-pages/payment.html">Payment Methods</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <nav aria-label="Social media">
+                        <ul class="social-menu">
+                            <li>
+                                <a href="https://facebook.com/florashop" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Follow us on Facebook">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/flora.egy"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Follow us on Instagram">
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 by Flora.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-search" viewBox="0 0 24 24">
+            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </symbol>
+        <symbol id="icon-cart" viewBox="0 0 24 24">
+            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+        </symbol>
+        <symbol id="icon-chevron-right" viewBox="0 0 24 24">
+            <path d="M9 18l6-6-6-6"/>
+        </symbol>
+    </svg>
+    <script src="/scripts/cart.js"></script>
+    <script src="/scripts/cart-drawer.js"></script>
+</body>
+</html>

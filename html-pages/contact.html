@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flora Shop - Discover our curated collection of headscarves">
+    <title>Flora | Contact Us</title>
+    <link rel="stylesheet" href="/styles/contact-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="header-main">
+            <div class="container">
+                <nav class="primary-nav" role="navigation" aria-label="Primary navigation">
+                    <a href="/html-pages/index.html" class="brand" aria-label="Flora home">
+                        <span class="brand-text">Flora</span>
+                    </a>
+                    
+                    <form class="search-form" role="search" aria-label="Site">
+                        <div class="search-input-wrapper">
+                            <label for="search-input" class="visually-hidden">Search products</label>
+                            <input type="search" 
+                                   id="search-input"
+                                   class="search-input"
+                                   placeholder="Search..."
+                                   autocomplete="off"
+                                   aria-label="Search products">
+                            <button type="submit" class="search-submit" aria-label="Submit search">
+                                <svg aria-hidden="true" focusable="false" class="icon">
+                                    <use href="#icon-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="header-actions">
+                        <a href="/html-pages/login.html" class="btn btn-login">Log In</a>
+                        <button type="button" 
+                                class="btn btn-cart"
+                                aria-label="Shopping cart"
+                                aria-expanded="false"
+                                aria-controls="cart-drawer">
+                            <svg aria-hidden="true" focusable="false" class="icon">
+                                <use href="#icon-cart"></use>
+                            </svg>
+                            <span class="cart-count" aria-live="polite" aria-atomic="true">0</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="category-nav" role="navigation" aria-label="Category navigation">
+            <div class="container">
+                <ul class="category-menu">
+                    <li><a href="/html-pages/index.html" class="category-link">Home</a></li>
+                    <li><a href="/html-pages/flora-section-catagory.html" class="category-link" aria-current="page">Shop</a></li>
+                    <li><a href="/html-pages/about.html" class="category-link">About</a></li>
+                    <li><a href="/html-pages/contact.html" class="category-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <h1 class="contact-title">Contact Us</h1>
+        
+        <div class="customer-service">
+            <h2>Customer Service</h2>
+            <p class="contact-info">Tel: 123-456-7890</p>
+            <p class="contact-info">Mail: info@mydomain.com</p>
+        </div>
+
+        <div class="contact-form-section">
+            <h2>We Want To Hear From You</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="firstName" name="firstName" required>
+                        <label for="firstName">First Name *</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="lastName" name="lastName" required>
+                        <label for="lastName">Last Name *</label>
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email *</label>
+                </div>
+                
+                <div class="form-group full-width">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Leave us a message</label>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Yes, subscribe me to your newsletter.</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div class="visit-us-section">
+            <h2>Visit Us</h2>
+            <div class="store-info">
+                <div class="address">
+                    <h3>Our Store Address</h3>
+                    <p>Asher min Ramadan</p>
+                </div>
+                <div class="hours">
+                    <h3>Opening Hours</h3>
+                    <p>Sunday - Monday - Tuesday - Wednesday - Thursday: 9 AM - 4 PM</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38997.09264614931!2d31.723416520309993!3d30.24025364028747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457f90db04a5069%3A0xd1d0cb38ede86307!2z2KzYp9mF2LnYqSDYp9mE2LPZiNmK2K_Zig!5e0!3m2!1sen!2seg!4v1734716553755!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section brand-section">
+                    <a href="/html-pages/index.html" class="brand">
+                        <span class="brand-text">Flora</span>
+                    </a>
+                </div>
+
+                <div class="footer-section">
+                    <nav aria-label="Footer primary navigation">
+                        <ul class="footer-menu">
+                            <li><a href="/html-pages/flora-section-catagory.html">Shop</a></li>
+                            <li><a href="/html-pages/about.html">About Us</a></li>
+                            <li><a href="/html-pages/contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <nav aria-label="Footer secondary navigation">
+                        <ul class="footer-menu">
+                            <li><a href="/html-pages/shipping-and-returns.html">Shipping & Returns</a></li>
+                            <li><a href="/html-pages/store-policy.html">Store Policy</a></li>
+                            <li><a href="/html-pages/payment.html">Payment Methods</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <nav aria-label="Social media">
+                        <ul class="social-menu">
+                            <li>
+                                <a href="https://facebook.com/florashop" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Follow us on Facebook">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/flora.egy"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Follow us on Instagram">
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 by Flora.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-search" viewBox="0 0 24 24">
+            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </symbol>
+        <symbol id="icon-cart" viewBox="0 0 24 24">
+            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+        </symbol>
+        <symbol id="icon-chevron-right" viewBox="0 0 24 24">
+            <path d="M9 18l6-6-6-6"/>
+        </symbol>
+    </svg>
+    <script src="/scripts/cart.js"></script>
+    <script src="/scripts/cart-drawer.js"></script>
+</body>
+</html>
